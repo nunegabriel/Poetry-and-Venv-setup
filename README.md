@@ -49,9 +49,7 @@ Ticket Management System Functionalities should include ticket_creation, ticket_
 
 ### Key Features <a name="key-features"></a>
 
-- Add a new Ticket
-- Update and exiting Ticket
-- All the data is persisted in JSON files
+- Setting up Poetry and Vene
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
