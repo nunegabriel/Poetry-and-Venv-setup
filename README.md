@@ -69,12 +69,12 @@ In order to run this project you need:
 
 ### Setup
 
-Clone this [repository]()hhttps://github.com/nunegabriel/FastApi-Simple-Management-System.git to your desired folder:
+Clone this [repository]()https://github.com/nunegabriel/Poetry-and-Venv-setup to your desired folder:
 
 ```sh
   cd my-folder
-  https://github.com/nunegabriel/FastApi-Simple-Management-System
-  cd blog-app
+  https://github.com/nunegabriel/Poetry-and-Venv-setup
+  cd Poetry-and-Venv-setup
 ```
 
 <!-- ### Install
