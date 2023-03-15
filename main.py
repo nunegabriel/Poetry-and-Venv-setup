@@ -68,7 +68,6 @@ async def update_item(item_id: int, name: str, event: str):
 # db details
 db_name = "testing"
 db_user = "postgres"
-db_password ='lgcu720'
 db_host = "localhost"
 db_port = "5432"
 
@@ -80,7 +79,7 @@ def get_db():
     conn = psycopg2.connect(
         dbname=db_name,
         user=db_user,
-        password=db_password,
+        password=f"{DATABASE_PASSWORD}",
         host=db_host,
         port=db_port
     )
