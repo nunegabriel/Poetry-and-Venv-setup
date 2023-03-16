@@ -10,8 +10,11 @@ from sqlalchemy.orm import sessionmaker
 from dotenv import load_dotenv
 import os
 
-from .database import SessionLocal, engine
-from . import crud, models
+from database import SessionLocal, engine, DATABASE_PASSWORD
+# import crud, models
+import models
+
+from models import MyTable
 
 env_path = Path('.', '.env')
 load_dotenv(dotenv_path=env_path)
@@ -20,9 +23,10 @@ load_dotenv()
 
 models.Base.metadata.create_all(bind=engine)
 
+app = FastAPI()
 
 # view 
-@app.get("/view-events/")
+@app.get("/view-events/" )
 async def get_items():
     db = SessionLocal()
     items = db.query(MyTable).all()
@@ -52,7 +56,6 @@ async def update_item(item_id: int, name: str, event: str):
 # db details
 db_name = "testing"
 db_user = "postgres"
-db_password ='lgcu720'
 db_host = "localhost"
 db_port = "5432"
 
@@ -64,7 +67,7 @@ def get_db():
     conn = psycopg2.connect(
         dbname=db_name,
         user=db_user,
-        password=db_password,
+        password=f"{DATABASE_PASSWORD}",
         host=db_host,
         port=db_port
     )
