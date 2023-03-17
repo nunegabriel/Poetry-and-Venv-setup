@@ -1,0 +1,591 @@
+[
+    {
+        "label": "psycopg2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psycopg2",
+        "description": "psycopg2",
+        "detail": "psycopg2",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "settings",
+        "description": "settings",
+        "detail": "settings",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "settings",
+        "description": "settings",
+        "isExtraImport": true,
+        "detail": "settings",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_PASSWORD",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Event",
+        "importPath": "schemas",
+        "description": "schemas",
+        "isExtraImport": true,
+        "detail": "schemas",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "models",
+        "description": "models",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "MyTable",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "ticket_router",
+        "importPath": "view",
+        "description": "view",
+        "isExtraImport": true,
+        "detail": "view",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseSettings",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseSettings",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "app.view.ticket_router",
+        "description": "app.view.ticket_router",
+        "peekOfCode": "def get_db():\n    \"\"\"\n    Open a new database connection and return a cursor object.\n    \"\"\"\n    conn = psycopg2.connect(\n        dbname=settings.db_name,\n        user=settings.db_user,\n        password=f\"{DATABASE_PASSWORD}\",\n        host=settings.db_host,\n        port=settings.db_port",
+        "detail": "app.view.ticket_router",
+        "documentation": {}
+    },
+    {
+        "label": "add_data",
+        "kind": 2,
+        "importPath": "app.view.ticket_router",
+        "description": "app.view.ticket_router",
+        "peekOfCode": "def add_data(name: str, event: str):\n    \"\"\"\n    Add a new record to the database.\n    \"\"\"\n    cursor = get_db()\n    cursor.execute(\"INSERT INTO events (name, event) VALUES (%s, %s);\", (name, event))\n    cursor.connection.commit()\n    cursor.close()\n    return {\"status\": \"ok\", \"message\": \"Data added successfully.\"}",
+        "detail": "app.view.ticket_router",
+        "documentation": {}
+    },
+    {
+        "label": "env_path",
+        "kind": 5,
+        "importPath": "app.view.ticket_router",
+        "description": "app.view.ticket_router",
+        "peekOfCode": "env_path = Path('.', '.env')\nload_dotenv(dotenv_path=env_path)\nload_dotenv()\nmodels.Base.metadata.create_all(bind=engine)\n# router = APIRouter()\nrouter = APIRouter(\n    prefix=\"/api/v1/ticket\",\n    tags=[\"tickets\"],\n)\nsettings = Settings()",
+        "detail": "app.view.ticket_router",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.view.ticket_router",
+        "description": "app.view.ticket_router",
+        "peekOfCode": "router = APIRouter(\n    prefix=\"/api/v1/ticket\",\n    tags=[\"tickets\"],\n)\nsettings = Settings()\n# view \n@router.get(\"/view-events/\",response_model=List[Event])\nasync def get_items():\n    db = SessionLocal()\n    items = db.query(MyTable).all()",
+        "detail": "app.view.ticket_router",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "kind": 5,
+        "importPath": "app.view.ticket_router",
+        "description": "app.view.ticket_router",
+        "peekOfCode": "settings = Settings()\n# view \n@router.get(\"/view-events/\",response_model=List[Event])\nasync def get_items():\n    db = SessionLocal()\n    items = db.query(MyTable).all()\n    print(items)\n    return items\n#delete\n@router.delete(\"/mytable/{item_id}\")",
+        "detail": "app.view.ticket_router",
+        "documentation": {}
+    },
+    {
+        "label": "get_items",
+        "kind": 2,
+        "importPath": "app.crud",
+        "description": "app.crud",
+        "peekOfCode": "def get_items(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(models.Item).offset(skip).limit(limit).all()",
+        "detail": "app.crud",
+        "documentation": {}
+    },
+    {
+        "label": "env_path",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "env_path = Path('.', '.env')\nload_dotenv(dotenv_path=env_path)\nload_dotenv()\nDATABASE_NAME = os.getenv(\"DATABASE_NAME\")\nDATABASE_USER = os.getenv(\"DATABASE_USER\")\nDATABASE_PASSWORD = os.getenv(\"DATABASE_PASSWORD\")\n# SQLAlchemy engine to connect to your PostgreSQL database\nSQLALCHEMY_DATABASE_URL = f\"postgresql://postgres:{DATABASE_PASSWORD}@localhost/{DATABASE_NAME}\"\nengine = create_engine(SQLALCHEMY_DATABASE_URL)\n# SQLAlchemy session to interact with the database",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_NAME",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "DATABASE_NAME = os.getenv(\"DATABASE_NAME\")\nDATABASE_USER = os.getenv(\"DATABASE_USER\")\nDATABASE_PASSWORD = os.getenv(\"DATABASE_PASSWORD\")\n# SQLAlchemy engine to connect to your PostgreSQL database\nSQLALCHEMY_DATABASE_URL = f\"postgresql://postgres:{DATABASE_PASSWORD}@localhost/{DATABASE_NAME}\"\nengine = create_engine(SQLALCHEMY_DATABASE_URL)\n# SQLAlchemy session to interact with the database\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_USER",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "DATABASE_USER = os.getenv(\"DATABASE_USER\")\nDATABASE_PASSWORD = os.getenv(\"DATABASE_PASSWORD\")\n# SQLAlchemy engine to connect to your PostgreSQL database\nSQLALCHEMY_DATABASE_URL = f\"postgresql://postgres:{DATABASE_PASSWORD}@localhost/{DATABASE_NAME}\"\nengine = create_engine(SQLALCHEMY_DATABASE_URL)\n# SQLAlchemy session to interact with the database\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_PASSWORD",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "DATABASE_PASSWORD = os.getenv(\"DATABASE_PASSWORD\")\n# SQLAlchemy engine to connect to your PostgreSQL database\nSQLALCHEMY_DATABASE_URL = f\"postgresql://postgres:{DATABASE_PASSWORD}@localhost/{DATABASE_NAME}\"\nengine = create_engine(SQLALCHEMY_DATABASE_URL)\n# SQLAlchemy session to interact with the database\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "SQLALCHEMY_DATABASE_URL",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "SQLALCHEMY_DATABASE_URL = f\"postgresql://postgres:{DATABASE_PASSWORD}@localhost/{DATABASE_NAME}\"\nengine = create_engine(SQLALCHEMY_DATABASE_URL)\n# SQLAlchemy session to interact with the database\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "engine = create_engine(SQLALCHEMY_DATABASE_URL)\n# SQLAlchemy session to interact with the database\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "Base = declarative_base()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "init_app",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def init_app():\n    app = FastAPI()\n    app.include_router(ticket_router.router)\n    return app\napp = init_app()",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "app = init_app()",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "MyTable",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class MyTable(Base):\n    __tablename__ = \"events\"\n    id = Column(Integer, primary_key=True, index=True)\n    name = Column(String, index=True)\n    event = Column(String)",
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "ItemBase",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class ItemBase(BaseModel):\n    name: str\n    event: str | None = None\nclass Event(BaseModel):\n    name: str\n    # event:str\n    class Config:\n        orm_mode = True",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Event",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class Event(BaseModel):\n    name: str\n    # event:str\n    class Config:\n        orm_mode = True",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "app.settings",
+        "description": "app.settings",
+        "peekOfCode": "class Settings(BaseSettings):\n    # app_name: str = \"Awesome API\"\n    # admin_email: str\n    # items_per_user: int = 50\n    # id: int\n    db_name: str = \"testing\"\n    db_user: str = \"postgres\"\n    db_host: str = \"localhost\"\n    db_port: int = \"5432\"",
+        "detail": "app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EventBase",
+        "kind": 6,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "class EventBase(BaseModel):\n    name: str\n    event: str\nclass EventCreate(EventBase):\n    pass\nclass EventUpdate(EventBase):\n    pass\nclass Event(EventBase):\n    id: int\n    class Config:",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "EventCreate",
+        "kind": 6,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "class EventCreate(EventBase):\n    pass\nclass EventUpdate(EventBase):\n    pass\nclass Event(EventBase):\n    id: int\n    class Config:\n        orm_mode = True",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "EventUpdate",
+        "kind": 6,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "class EventUpdate(EventBase):\n    pass\nclass Event(EventBase):\n    id: int\n    class Config:\n        orm_mode = True",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Event",
+        "kind": 6,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "class Event(EventBase):\n    id: int\n    class Config:\n        orm_mode = True",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "settings",
+        "description": "settings",
+        "peekOfCode": "class Settings(BaseSettings):\n    # app_name: str = \"Awesome API\"\n    # admin_email: str\n    # items_per_user: int = 50\n    # id: int\n    name: str\n    event: str",
+        "detail": "settings",
+        "documentation": {}
+    }
+]
