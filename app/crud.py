@@ -13,6 +13,3 @@ def create_event(db: Session, event_create: schemas.CreateEvent):
     db.commit()
     db.refresh(db_event)
     return db_event
-
-def get_user_by_email(db: Session, event: str):
-    return db.query(models.MyTable).filter(models.MyTable.event == event).first()
