@@ -6,6 +6,7 @@ from fastapi import FastAPI
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from settings import Settings
 
 
 from dotenv import load_dotenv
@@ -16,9 +17,11 @@ load_dotenv(dotenv_path=env_path)
 
 load_dotenv()
 
-DATABASE_NAME = os.getenv("DATABASE_NAME")
-DATABASE_USER = os.getenv("DATABASE_USER")
-DATABASE_PASSWORD = os.getenv("DATABASE_PASSWORD")
+settings = Settings()
+
+DATABASE_NAME = settings.database_name
+DATABASE_USER = settings.database_user
+DATABASE_PASSWORD = settings.database_password
 
 
 # SQLAlchemy engine to connect to your PostgreSQL database

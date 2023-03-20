@@ -5,8 +5,12 @@ class ItemBase(BaseModel):
     event: str | None = None
 
 class Event(BaseModel):
+    id: int
     name: str
-    # event:str
+    event:str
 
     class Config:
         orm_mode = True
+
+class CreateEvent(Event):
+    pass
