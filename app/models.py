@@ -3,7 +3,6 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from database import Base
 
-
 class MyTable(Base):
     __tablename__ = "events"
 

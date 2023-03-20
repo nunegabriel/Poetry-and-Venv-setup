@@ -23,7 +23,6 @@ DATABASE_NAME = settings.database_name
 DATABASE_USER = settings.database_user
 DATABASE_PASSWORD = settings.database_password
 
-
 # SQLAlchemy engine to connect to your PostgreSQL database
 SQLALCHEMY_DATABASE_URL = f"postgresql://postgres:{DATABASE_PASSWORD}@localhost/{DATABASE_NAME}"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
