@@ -3,10 +3,6 @@ from sqlalchemy.future import select
 from database import db
 from models.model import User
 
-
-
-database = db
-
 class UsersRepository():
  
     @staticmethod
