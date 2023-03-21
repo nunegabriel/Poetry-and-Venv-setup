@@ -17,8 +17,11 @@ engine = create_engine(f"postgresql://{DATABASE_USER}:{DATABASE_PASSWORD}@localh
                        )
 
 SessionLocal = sessionmaker(bind=engine)
+model.Base.metadata.create_all(bind=engine)
 
 # Dependency
+db= SessionLocal()
+
 def get_db():
     db = SessionLocal()
     try:
@@ -27,4 +30,7 @@ def get_db():
         db.close()
 
 
-model.Base.metadata.create_all(bind=engine)
+
+
+
+

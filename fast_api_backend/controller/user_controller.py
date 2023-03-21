@@ -35,15 +35,16 @@ def delete_user(db: Session, user_id: int):
     db.delete(db_user_to_delete)
     db.commit()
     db.refresh(db_user_to_delete)
-    return db_user_to_delete
+    
 
 
-def update_user(db: Session, user_id: int, user: user_schema.UserCreate):
+def update_user(db: Session, user_id: int, user: user_schema.UserUpdate):
     db_user_to_update = db.query(model.User).filter(
         model.User.id == user_id).first()
-    db_user_to_update = {db_user_to_update.email: user.email,
-                         db_user_to_update.hashed_password: pwd_context.hash(user.password)}
-    updated_data = db.add(db_user_to_update)
+    db_user_to_update.email = user.email
+    db_user_to_update.first_name: user.first_name
+    db_user_to_update.last_name=user.last_name
+    db.add(db_user_to_update)
     db.commit()
-    return updated_data
+    # return updated_data
 

@@ -1,4 +1,8 @@
 from pydantic import BaseModel
+from typing import Optional, TypeVar
+
+
+T = TypeVar('T')
 
 
 class UserBase(BaseModel):
@@ -7,6 +11,15 @@ class UserBase(BaseModel):
     email: str
 
 
+class LoginSchema(BaseModel):
+    email: str
+    password: str
+
+class ChangePasswordSchema(BaseModel):
+    email: str
+    new_password: str
+
+    
 class UserCreate(UserBase):
     password: str
 
@@ -21,3 +34,10 @@ class User(UserBase):
 
 class UserUpdate(UserBase):
     email: str = None
+
+
+class ResponseSchema(BaseModel):
+    detail: str
+    result: Optional[T] = None
+
+
