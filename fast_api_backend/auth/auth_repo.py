@@ -1,23 +1,12 @@
 from datetime import datetime, timedelta
 from typing import Optional
 from jose import jwt
-
 from fastapi import Request, HTTPException
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from configuration import Settings
 
-import os
-from pathlib import Path
-from dotenv import load_dotenv
-
-
-
-env_path = Path('.', '.env')
-load_dotenv(dotenv_path=env_path)
-
-SECRET_KEY = os.getenv("SECRET_KEY")
-ALGORITHM = os.getenv("ALGORITHM")
-
-
+SECRET_KEY = Settings().secret_key
+ALGORITHM = Settings().algorithm
 
 class JWTRepo:
 

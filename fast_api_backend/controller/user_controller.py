@@ -38,7 +38,7 @@ def delete_user(db: Session, user_id: int):
     
 
 
-def update_user(db: Session, user_id: int, user: user_schema.UserUpdate):
+def update_user(db: Session, user_id: int, user: user_schema.User):
     db_user_to_update = db.query(model.User).filter(
         model.User.id == user_id).first()
     db_user_to_update.email = user.email
@@ -46,5 +46,5 @@ def update_user(db: Session, user_id: int, user: user_schema.UserUpdate):
     db_user_to_update.last_name=user.last_name
     db.add(db_user_to_update)
     db.commit()
-    # return updated_data
+    db.refresh(db_user_to_update)
 

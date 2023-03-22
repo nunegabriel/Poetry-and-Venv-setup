@@ -3,9 +3,9 @@ from typing import List
 
 from passlib.context import CryptContext
 from schemas.user_schema import LoginSchema,ChangePasswordSchema
-from auth.auth_repo import JWTRepo
+from auth.auth_repo import JWTRepo,JWTBearer
 from controller.auth_controller import UsersRepository
-
+from fastapi.security import HTTPAuthorizationCredentials
 
 # Encrypt password
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
