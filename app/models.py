@@ -10,3 +10,4 @@ class MyTable(Base):
     name = Column(String, index=True)
     event = Column(String)
     creation_date = Column(DateTime)
+    modified_date = Column(DateTime)

@@ -12,9 +12,7 @@ class Event(BaseModel):
     name: str
     event:str
     creation_date: datetime.datetime
-        creation_date: datetime.datetime
-
-    # creation_date: datetime
+    modified_date: datetime.datetime
 
     class Config:
         orm_mode = True

@@ -37,12 +37,8 @@ settings = Settings()
 @router.get("/view-events/",response_model=List[Event])
 async def get_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     events = crud.get_events(db, skip=skip, limit=limit)
-    for _ in events:
-        print(_.creation_date)
     return events
     
-    
-
 #delete
 @router.delete("/mytable/{item_id}")
 async def delete_item(item_id: int, db: Session = Depends(get_db)):
@@ -51,10 +47,12 @@ async def delete_item(item_id: int, db: Session = Depends(get_db)):
     return {"message": "Item deleted"}
 
 from typing import Optional
+from datetime import datetime
 
 @router.patch("/update-event/{item_id}")
 async def update_item(
-    item_id: int, 
+    item_id: int,
+    # modified_date: datetime.datetime,
     name: str = None, 
     event: Optional[str] = None,
      db: Session = Depends(get_db)):
@@ -67,9 +65,15 @@ async def update_item(
     if event is not None:
         item.event = event
 
+   
+    item.modified_date = datetime.now() 
+
     db.add(item)
     db.commit()
     return {"message": "Item updated"}
+
+
+    
 
 
 @router.post("/create-event", response_model=schemas.Event)
