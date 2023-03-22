@@ -52,7 +52,6 @@ from datetime import datetime
 @router.patch("/update-event/{item_id}")
 async def update_item(
     item_id: int,
-    # modified_date: datetime.datetime,
     name: str = None, 
     event: Optional[str] = None,
      db: Session = Depends(get_db)):
@@ -71,10 +70,6 @@ async def update_item(
     db.add(item)
     db.commit()
     return {"message": "Item updated"}
-
-
-    
-
 
 @router.post("/create-event", response_model=schemas.Event)
 def add_event(event_create: schemas.CreateEvent, db: Session = Depends(get_db)):

@@ -5,7 +5,6 @@ import datetime
 class ItemBase(BaseModel):
     name: str
     event: str | None = None
-    # creation_date: str
 
 class Event(BaseModel):
     id: int
