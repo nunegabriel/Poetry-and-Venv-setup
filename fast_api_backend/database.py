@@ -1,21 +1,23 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from models import model
-from configuration import Settings
 
+from configuration import Settings
+from models import model
 
 DATABASE_NAME = Settings().database_name
 DATABASE_USER = Settings().database_user
 DATABASE_PASSWORD = Settings().database_password
 
-engine = create_engine(f'postgresql://{DATABASE_USER}:{DATABASE_PASSWORD}@localhost/{DATABASE_NAME}',
-                       echo=True
-                       )
+engine = create_engine(
+    f"postgresql://{DATABASE_USER}:{DATABASE_PASSWORD}@localhost/{DATABASE_NAME}",
+    echo=True,
+)
 SessionLocal = sessionmaker(bind=engine)
 model.Base.metadata.create_all(bind=engine)
 
 # Dependency
-db= SessionLocal()
+db = SessionLocal()
+
 
 def get_db():
     db = SessionLocal()
@@ -23,9 +25,3 @@ def get_db():
         yield db
     finally:
         db.close()
-
-
-
-
-
-
