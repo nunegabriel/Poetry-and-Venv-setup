@@ -2,9 +2,9 @@ from pydantic import BaseModel
 from typing import Optional
 import datetime
 
-class CreateEvent(BaseModel):
-    name: str
-    event: str | None = None
+# class CreateEvent(BaseModel):
+#     name: str
+#     event: str | None = None
 
 class Event(BaseModel):
     id: int
@@ -16,5 +16,5 @@ class Event(BaseModel):
     class Config:
         orm_mode = True
 
-# class CreateEvent(Event):
-#     pass
+class CreateEvent(Event):
+    pass
