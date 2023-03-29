@@ -64,7 +64,6 @@ async def update_item(
     if event is not None:
         item.event = event
 
-   
     item.modified_date = datetime.now() 
 
     db.add(item)
@@ -74,3 +73,4 @@ async def update_item(
 @router.post("/create-event", response_model=schemas.Event)
 def add_event(event_create: schemas.CreateEvent, db: Session = Depends(get_db)):
      return crud.create_event(db=db, event_create=event_create)
+
