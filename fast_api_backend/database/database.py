@@ -1,12 +1,12 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from configuration import Settings
+from core import configuration
 from models import model
 
-DATABASE_NAME = Settings().database_name
-DATABASE_USER = Settings().database_user
-DATABASE_PASSWORD = Settings().database_password
+DATABASE_NAME = configuration.Settings().database_name
+DATABASE_USER = configuration.Settings().database_user
+DATABASE_PASSWORD = configuration.Settings().database_password
 
 engine = create_engine(
     f"postgresql://{DATABASE_USER}:{DATABASE_PASSWORD}@localhost/{DATABASE_NAME}",

@@ -6,9 +6,12 @@ from sqlalchemy.orm import Session
 
 from auth.auth_repo import JWTBearer, JWTRepo
 from controller import user_controller
-from database import get_db
+from database import database
 from schemas import user_schema
 from schemas.user_schema import ResponseSchema
+
+get_db = database.get_db
+
 
 router = APIRouter(
     prefix="/api/v1/users/account",
@@ -16,12 +19,12 @@ router = APIRouter(
 )
 
 
-@router.post("/", response_model=user_schema.User)
+@router.post("/create/user", response_model=user_schema.User)
 def create_user(user: user_schema.UserCreate, db: Session = Depends(get_db)):
     db_user = user_controller.get_user_by_email(db, email=user.email)
     if db_user:
         raise HTTPException(status_code=400, detail="Email already registered")
-    return user_controller.create_user(db=get_db, user=user)
+    return user_controller.create_user(db, user=user)
 
 
 @router.get("/", response_model=List[user_schema.User])

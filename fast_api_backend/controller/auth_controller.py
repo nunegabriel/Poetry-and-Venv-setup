@@ -1,8 +1,10 @@
 from sqlalchemy import update as sql_update
 from sqlalchemy.future import select
 
-from database import db
+from database import database
 from models.model import User
+
+db = database.db
 
 
 class UsersRepository:

@@ -5,10 +5,10 @@ from fastapi import HTTPException, Request
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from jose import jwt
 
-from configuration import Settings
+from core import configuration
 
-SECRET_KEY = Settings().secret_key
-ALGORITHM = Settings().algorithm
+SECRET_KEY = configuration.Settings().secret_key
+ALGORITHM = configuration.Settings().algorithm
 
 
 class JWTRepo:

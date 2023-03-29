@@ -1,8 +1,7 @@
 from fastapi import APIRouter, Depends
 
 from auth.auth_repo import JWTBearer
-from schemas.user_schema import (ChangePasswordSchema, LoginSchema,
-                                 ResponseSchema)
+from schemas.user_schema import ChangePasswordSchema, LoginSchema, ResponseSchema
 from service.auth_service import AuthService
 
 router = APIRouter(

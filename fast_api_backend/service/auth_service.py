@@ -1,6 +1,7 @@
 from fastapi import HTTPException
 from passlib.context import CryptContext
-from auth.auth_repo import  JWTRepo
+
+from auth.auth_repo import JWTRepo
 from controller.auth_controller import UsersRepository
 from schemas.user_schema import ChangePasswordSchema, LoginSchema
 
