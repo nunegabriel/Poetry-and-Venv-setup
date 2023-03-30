@@ -46,3 +46,4 @@ def test_create_user():
     # data = response.json()
     # assert data["email"] == "deadpool@example.com"
     # assert data["id"] == user_id
+  
