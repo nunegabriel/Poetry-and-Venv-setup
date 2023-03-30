@@ -52,9 +52,9 @@ def delete_user(
     credentials: HTTPAuthorizationCredentials = Security(JWTBearer()),
 ):
     JWTRepo.extract_token(credentials)
-    db_user_to_delete = user_controller.delete_user(db, user_id)
-    if db_user_to_delete is None:
-        raise HTTPException(status_code=404, detail="User not found")
+    db_to_delete= user_controller.delete_user(db, user_id)
+    if db_to_delete is None:
+        raise HTTPException(status_code=404, detail="User not deleted!" )
     return ResponseSchema(detail="User details deleted!")
 
 
@@ -62,9 +62,9 @@ def delete_user(
     "/{user_id}", response_model=ResponseSchema, dependencies=[Depends(JWTBearer())]
 )
 def update_user(
-    user: user_schema.UserUpdate, user_id: int, db: Session = Depends(get_db)
+    user: user_schema.UserBase, user_id: int, db: Session = Depends(get_db)
 ):
     db_user_to_update = user_controller.update_user(db, user_id, user=user)
-    if not db_user_to_update:
-        raise HTTPException(status_code=404, detail="User not found")
+    if db_user_to_update is None:
+        raise HTTPException(status_code=404, detail="User was not updated!")
     return ResponseSchema(detail="User details updated!")

@@ -33,8 +33,8 @@ class User(UserBase):
         orm_mode = True
 
 
-class UserUpdate(UserBase):
-    email: str = None
+# class UserUpdate(UserBase):
+#     email: str = None
 
 
 class ResponseSchema(BaseModel):
