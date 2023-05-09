@@ -16,6 +16,8 @@ python-dotenv = "^1.0.0"
 alembic = "^1.10.2"
 pytest = "^7.2.2"
 httpx = "^0.23.3"
+aioredis = "^2.0.1"
+redis = "^4.5.5"
 
 
 [build-system]

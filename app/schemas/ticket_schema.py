@@ -1,10 +1,6 @@
 from pydantic import BaseModel
-from typing import Optional
 import datetime
 
-# class CreateEvent(BaseModel):
-#     name: str
-#     event: str | None = None
 
 class Event(BaseModel):
     id: int
