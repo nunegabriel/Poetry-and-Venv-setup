@@ -24,3 +24,50 @@ class UpdateItem:
 
     def __call__(self, item_id: int, item_input: ItemInput) -> ItemOutput:
         item
+        
+        
+       @app.put("/items/{item_id}")
+async def update_item(item_id: int, item: Item):
+    # Update the item in the database
+    update_item_in_database(item_id, item)
+    # Update the item in the Redis cache
+    redis_client.set(f'item:{item_id}', item.json())
+    return JSONResponse(content=item.dict())
+
+
+@app.get("/items/{item_id}")
+async def read_item(item_id: int, use_cache: Optional[bool] = True):
+    if use_cache:
+        # Try to get the item from the Redis cache
+        item_data = redis_client.get(f'item:{item_id}')
+        if item_data:
+            item = Item(**json.loads(item_data))
+            return JSONResponse(content=item.dict())
+    # If the item is not in the cache, retrieve it from the database and cache it
+    item = retrieve_item_from_database(item_id)
+    redis_client.set(f'item:{item_id}', item.json())
+    return JSONResponse(content=item.dict())
+
+
+def update_item_in_database(item_id: int, item: Item):
+    session = Session()
+    item_model = session.query(ItemModel).filter(ItemModel.id == item_id).first()
+    item_model.name = item.name
+    item_model.price = item.price
+    session.commit()
+    session.close()
+
+
+@app.get("/items/{item_id}")
+async def read_item(item_id: int, use_cache: Optional[bool] = True):
+    if use_cache:
+        # Try to get the item from the Redis cache
+        item_data = redis_client.get(f'item:{item_id}')
+        if item_data:
+            item = Item(**json.loads(item_data))
+            return JSONResponse(content=item.dict())
+    # If the item is not in the cache, retrieve it from the database and cache it
+    item = retrieve_item_from_database(item_id)
+    redis_client.set(f'item:{item_id}', item.json())
+    return JSONResponse(content=item.dict())
+
